@@ -1,4 +1,4 @@
-import * as splitOO from './build/test.main.mjs'
+import * as splitOO from './build/expenses.main.mjs'
 import { loadStdlib, ask } from '@reach-sh/stdlib'
 
 const stdlib = await loadStdlib('ETH')
