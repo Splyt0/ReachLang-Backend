@@ -30,7 +30,7 @@ export const main = Reach.App(() => {
     //Create a new group and send an array of group members, along with size(fixed - 5)
   });
 
-  // tzpe for expenses
+  // type for expenses
   // no create
   const ExpenseObject = Object({
     expenseId: UInt,

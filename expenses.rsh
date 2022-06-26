@@ -28,7 +28,7 @@ const [totalPaid] = parallelReduce([ amount/5 ])
   .invariant(balance() == 0)
   .while(totalPaid < amount)
   .api_(SettleExpense.settleUp, () => {
-    check(paidUsers.includes(this), "You have already paid!");
+    check(paidUsers.member(this), "You have already paid!");
     return[
         [amount/5],
         notify => {
